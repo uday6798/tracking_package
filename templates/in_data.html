@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>uday's imports $ exports
+        </title> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style >
+           
+            .container {
+                position: relative;
+                max-width: 1800px; /* Maximum width */
+            }
+            .container .content {
+                position: absolute; /* Position the background text */
+                bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+                background: rgb(0, 0, 0); /* Fallback color */
+                background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+                color: #f1f1f1; /* Grey text */
+                width: 100%; /* Full width */
+                
+            }
+            /* Center website */
+            .body { 
+                text-align:center; 
+            } 
+
+
+
+            .bg-image {
+            /* The image used */
+            background-image: url("giphy.gif");
+  
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-origin: border-box;
+            max-height: 1000px;
+            }
+            
+        </style>
+    </head>
+    <body  style="margin: 0;background: rgb(7, 119, 122);">
+        <div class="bg-image">
+            <div class="body">
+                <h1>Uday's logistics enterprises ltd.</h1>
+                <form action="{{url_for('startup')}}" method="POST">
+        
+                <h2> Query:
+                    <input type="input" placeholder='place your query here' name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </h2>
+        
+                </form>
+                    <h4>deliver goods everywhere in the world at reasonable prices</h4>
+            </div>
+        </div>
+    </body>
+</html>
